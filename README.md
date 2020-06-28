@@ -11,3 +11,7 @@ I used the tweets collected from "collectTweets.py" as training data for an SVM 
 twitterBot.py:
 
 Finally, I used the trained SVM classifier to create a twitterbot that tweets out every five minutes. It looks at the latest tweets containing references to "Black Lives Matter" and re-tweets them if they contain actionable information (i.e. where to protest, where to donate, etc). It also manually looks at certain twitter accoutns in the Boston area and examines their latest tweet to see if it contains useful information.
+
+
+FURTHER IMPROVEMENTS:
+As Ive examined the tweets the account automatically retweets, it has become clear that there is a major limitation to the program. Many people use twitter for false donations, false petitions, and other misinformation that at the surface is indistinguishable from actual actionable information. The bot is unable to pick up on this discrepancies, and further iterations will try to account for this 
